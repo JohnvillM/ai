@@ -1,7 +1,9 @@
 # ai
 
 
-int player1Choice;
+
+
+        int player1Choice;
         try {
             player1Choice = Integer.parseInt(jTextField3.getText());
             if (player1Choice < 1 || player1Choice > 3) {
@@ -14,7 +16,6 @@ int player1Choice;
             jLabel12.setText("CPU Choice: ");
             return;
         }
-
         int player2Choice = random.nextInt(3) + 1; // CPU chooses randomly between 1 and 3
 
         jLabel12.setText("CPU Choice: " + player2Choice);
